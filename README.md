@@ -58,19 +58,19 @@ g++ -O2 -std=c++17 -pthread -Iinclude src/main.cpp -o ttl_cache
 ==========================================================================
  TTL Cache Benchmark  |  cap=500  keys=2500  ops=100000
 ==========================================================================
- Config                               Latency    Hit Rate      Throughput
+ Config                              Latency    Hit Rate      Throughput
 --------------------------------------------------------------------------
- [SEQ /Uniform]  LRU                   6.4 ms       19.39 %    15,517,604 ops/s
- [SEQ /Uniform]  LFU                   6.7 ms       19.38 %    14,854,411 ops/s
+ [SEQ /Uniform]  LRU                  3.4 ms      19.39 %    29185193 ops/s
+ [SEQ /Uniform]  LFU                  3.7 ms      19.38 %    27082884 ops/s
 --------------------------------------------------------------------------
- [SEQ /Zipf  ]   LRU                   7.9 ms       74.58 %    12,639,012 ops/s
- [SEQ /Zipf  ]   LFU                  11.3 ms       73.87 %     8,871,901 ops/s
+ [SEQ /Zipf  ]   LRU                  5.3 ms      74.58 %    18752832 ops/s
+ [SEQ /Zipf  ]   LFU                  7.1 ms      73.87 %    14022433 ops/s
 --------------------------------------------------------------------------
- [CONC/Uniform]  LRU                  11.7 ms       19.38 %     8,558,142 ops/s
- [CONC/Uniform]  LFU                   8.7 ms       19.39 %    11,447,867 ops/s
+ [CONC/Uniform]  LRU                 22.1 ms      19.55 %     4521977 ops/s
+ [CONC/Uniform]  LFU                 18.0 ms      19.55 %     5551422 ops/s
 --------------------------------------------------------------------------
- [CONC/Zipf  ]   LRU                   9.9 ms       74.49 %    10,117,503 ops/s
- [CONC/Zipf  ]   LFU                  16.0 ms       74.08 %     6,239,387 ops/s
+ [CONC/Zipf  ]   LRU                 20.1 ms      74.66 %     4980749 ops/s
+ [CONC/Zipf  ]   LFU                 37.5 ms      73.94 %     2664857 ops/s
 ==========================================================================
 ```
 
